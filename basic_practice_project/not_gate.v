@@ -7,3 +7,4 @@ output out;
 // Define circuit functionality
 assign out = ~in;
 endmodule
+ 
