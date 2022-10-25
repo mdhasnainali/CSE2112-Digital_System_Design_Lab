@@ -5,3 +5,5 @@
 * NAND gate 
 * NOT gate
 * NOR gate 
+* Half adder 
+* Full adder 
