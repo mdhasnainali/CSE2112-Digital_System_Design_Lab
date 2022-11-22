@@ -7,6 +7,7 @@ output Carry;
 
 wire [3:0] Bbar;
 
+// Dataflow Modeling
 assign Bbar[0] = B[0] ^ M,
 	Bbar[1] = B[1] ^ M,
 	Bbar[2] = B[2] ^ M,
