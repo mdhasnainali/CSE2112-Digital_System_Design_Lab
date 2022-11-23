@@ -13,6 +13,7 @@ assign J[0] = (~M & ~Q[1] & ~Q[2]) + (M & Q[1] & Q[2]),
 	J[2] = 1,
 	K[2] = 1;
 
+// Gate Level Modeling
 JKFF jk1(Q[0],Qbar[0],J[0],K[0],CLR,CLK);
 JKFF jk2(Q[1],Qbar[1],J[1],K[1],CLR,CLK);
 JKFF jk3(Q[2],Qbar[2],J[2],K[2],CLR,CLK);
