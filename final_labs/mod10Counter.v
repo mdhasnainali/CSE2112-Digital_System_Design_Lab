@@ -9,6 +9,7 @@ wire CLR;
 assign J = 1,
 	K = 1;
 
+// Gate Level Modeling
 JKFF jk1(Q[0],Qbar[0],J,K,CLR,CLK);
 JKFF jk2(Q[1],Qbar[1],J,K,CLR,Q[0]);
 JKFF jk3(Q[2],Qbar[2],J,K,CLR,Q[1]);
