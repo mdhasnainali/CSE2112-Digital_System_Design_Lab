@@ -5,6 +5,7 @@ output [2:0] Q;
 
 wire [2:0] J,K,Qbar;
 
+// Dataflow Modeling
 assign J[0] = (~M & ~Q[1] & ~Q[2]) + (M & Q[1] & Q[2]),
 	K[0] =  J[0],
 	J[1] = ~(M ^ Q[2]),
