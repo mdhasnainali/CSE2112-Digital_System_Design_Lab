@@ -6,7 +6,7 @@ output Q,Qbar;
 wire a, b, c, d, y, ybar;
 
 // Dataflow Modeling
-assign a = ~(Qbar & J * CLK & CLR),
+assign a = ~(Qbar & J & CLK & CLR),
 	b = ~(Q & K & CLK),
 	y = ~(a & ybar),
 	ybar = ~(y & CLR & b),
